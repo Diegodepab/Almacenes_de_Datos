@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_9" directorySegmentName="seg_0" id="FF427B06-67B4-EE7B-4E7F-38FD38001229">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-30 13:52:56 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<sourcePk>A4823FF4-CDD1-9156-8902-8C427A49A7EC</sourcePk>
+<targetPk>37CE305F-9CF9-88BA-B32A-1DA750F9BC78</targetPk>
+<identifying>false</identifying>
+<nameOnSource>Contiene</nameOnSource>
+<nameOnTarget>es abarcado</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DDA0E1DF-4853-0882-9C3E-A60EAC9A047D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9C1A803B-B643-CCAC-83A1-5B2EFC8B2D7E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

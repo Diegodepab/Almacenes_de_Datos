@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9C1A803B-B643-CCAC-83A1-5B2EFC8B2D7E" name="PARQUE">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:30:00 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nombre" id="6A356E37-8EAD-8A5B-244E-4D7A414A042C">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:30:44 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="teléfono" id="5A6C33A8-C2E3-EC71-AEC5-309A159B3660">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:31:06 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion_administrativa" id="D3069876-3720-7B4F-2874-CEB6D8AA763E">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:31:58 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="web" id="EE2098D4-8ACD-F4AD-E103-E58959718E45">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:32:19 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo" id="6E5A2797-3EAB-65A2-1CDF-072A9034775B">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:32:38 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_de_declaracion" id="4985AE9F-320A-279C-11EF-531B3136BA16">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:33:04 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="extension" id="36EAE024-9977-329B-03EB-34D602665C62">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:33:52 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_municipios" id="BDECA000-2DBE-6BA9-8A99-7E8A75698F8A">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-30 13:52:34 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dni" id="0080F846-24C6-8AD6-5A13-68B09D152000">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-01 17:36:38 UTC</createdTime>
+<generatorID>75D0D8A5-5423-0BB1-829F-5B4EC644EB75</generatorID>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="true"/>
+</engineerTo>
+<referedAttribute>6AEC9958-F35C-E40C-2EDD-B74F6037DC52</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="37CE305F-9CF9-88BA-B32A-1DA750F9BC78" name="PARQUE NATURAL PK">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-09-27 23:30:51 UTC</createdTime>
+<ownerDesignName>parques_naturales</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5A391B80-035B-6F44-3F28-94BE82710BF7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6A356E37-8EAD-8A5B-244E-4D7A414A042C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
