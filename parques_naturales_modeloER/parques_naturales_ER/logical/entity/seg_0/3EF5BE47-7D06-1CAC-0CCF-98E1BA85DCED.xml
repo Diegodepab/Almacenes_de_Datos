@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3EF5BE47-7D06-1CAC-0CCF-98E1BA85DCED" name="PERSONA">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:00:23 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="dni" id="E8B3C0F0-2809-4C86-74A4-8F6C6787CC38">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:00:32 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="D03E3545-082B-3A64-76DE-45CE38840BF6">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:00:43 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fech_nac" id="18C57E21-0121-981E-B220-F62F5045ADBD">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:00:59 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dirrecicon" id="80536171-6459-F584-D90B-181B540F8311">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:01:07 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="4A5FBB5C-63F7-5F29-3D0A-3F3D630E2112">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:01:39 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre1" id="95EFBD38-DB73-76DE-EA93-6F579AC08A6B">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:08:23 UTC</createdTime>
+<generatorID>4ED2EA45-2190-8672-02C6-49201FB45E2F</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9A3B1351-777F-D97B-5BC6-D10D45D559DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B02C9724-2D69-E728-9C09-743B2C938E47" name="persona PK">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:00:42 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E8B3C0F0-2809-4C86-74A4-8F6C6787CC38</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

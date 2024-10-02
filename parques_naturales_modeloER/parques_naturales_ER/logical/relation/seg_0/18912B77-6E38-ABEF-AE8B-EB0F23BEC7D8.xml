@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="presidentes_parques" directorySegmentName="seg_0" id="18912B77-6E38-ABEF-AE8B-EB0F23BEC7D8">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:07:14 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<sourcePk>049CC84B-A9A3-E7C3-AAAF-CE55B0B78571</sourcePk>
+<targetPk>B02C9724-2D69-E728-9C09-743B2C938E47</targetPk>
+<identifying>false</identifying>
+<nameOnSource>es presidida</nameOnSource>
+<nameOnTarget>puede ser presidente</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C8EB0656-12DA-41B0-3885-C0A595E2F85D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3EF5BE47-7D06-1CAC-0CCF-98E1BA85DCED</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

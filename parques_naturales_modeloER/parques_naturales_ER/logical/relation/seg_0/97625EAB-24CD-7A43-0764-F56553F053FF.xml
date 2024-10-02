@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="municipios_enparques" directorySegmentName="seg_0" id="97625EAB-24CD-7A43-0764-F56553F053FF">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:09:19 UTC</createdTime>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<engineerTo>
+<item key="7A23D742-5997-3F30-49C4-F4840715679B" value="true"/>
+</engineerTo>
+<sourcePk>049CC84B-A9A3-E7C3-AAAF-CE55B0B78571</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contiene</nameOnSource>
+<nameOnTarget>es abarcado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C8EB0656-12DA-41B0-3885-C0A595E2F85D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>60016F3B-2559-7B1A-63CB-1A4DB6AD8863</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
