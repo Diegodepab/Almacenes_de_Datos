@@ -1,0 +1,491 @@
+-- Generado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
+--   en:        2024-10-02 12:57:16 CEST
+--   sitio:      SQL Server 2012
+--   tipo:      SQL Server 2012
+
+
+
+CREATE TABLE ARBITRO 
+    (
+     N_colegiado INTEGER NOT NULL , 
+     Internacional BIT NOT NULL , 
+     Ex_futbolista BIT NOT NULL , 
+     ARBITRO_TYPE VARCHAR (7) NOT NULL 
+    )
+GO 
+
+
+ALTER TABLE ARBITRO 
+    ADD CONSTRAINT CH_INH_ARBITRO 
+    CHECK ( ARBITRO_TYPE IN ('ARBITRO') ) 
+GO
+
+ALTER TABLE ARBITRO ADD CONSTRAINT ARBITRO_PK PRIMARY KEY CLUSTERED (N_colegiado)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE COLEGIADO 
+    (
+     N_colegiado INTEGER NOT NULL , 
+     Nombre VARCHAR (20) NOT NULL , 
+     DNI VARCHAR (20) NOT NULL , 
+     Antiguedad INTEGER NOT NULL , 
+     Categoria_ano_anterior VARCHAR (20) NOT NULL , 
+     Tipo_colegiado VARCHAR (20) NOT NULL 
+    )
+GO
+
+ALTER TABLE COLEGIADO ADD CONSTRAINT COLEGIADO_PK PRIMARY KEY CLUSTERED (N_colegiado)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE EQUIPO 
+    (
+     Nombre_equipo VARCHAR (20) NOT NULL , 
+     N_socios INTEGER NOT NULL , 
+     Campo VARCHAR (20) NOT NULL , 
+     Ciudad VARCHAR (20) NOT NULL , 
+     Ano_fundacion INTEGER NOT NULL , 
+     Anos_en_primera INTEGER NOT NULL , 
+     Nombre_fundador VARCHAR (20) NOT NULL , 
+     PERSONAL_Dni5 VARCHAR (10) NOT NULL , 
+     PERSONAL_Dni VARCHAR (10) NOT NULL , 
+     PERSONAL_Dni3 VARCHAR (10) NOT NULL , 
+     PERSONAL_Dni1 VARCHAR (10) NOT NULL , 
+     PERSONAL_Dni2 VARCHAR (10) NOT NULL , 
+     PERSONAL_Dni6 VARCHAR (10) NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    EQUIPO__IDX ON EQUIPO 
+    ( 
+     PERSONAL_Dni 
+    ) 
+GO 
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    EQUIPO__IDXv1 ON EQUIPO 
+    ( 
+     PERSONAL_Dni5 
+    ) 
+GO 
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    EQUIPO__IDXv2 ON EQUIPO 
+    ( 
+     PERSONAL_Dni1 
+    ) 
+GO 
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    EQUIPO__IDXv3 ON EQUIPO 
+    ( 
+     PERSONAL_Dni3 
+    ) 
+GO 
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    EQUIPO__IDXv4 ON EQUIPO 
+    ( 
+     PERSONAL_Dni2 
+    ) 
+GO 
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    EQUIPO__IDXv5 ON EQUIPO 
+    ( 
+     PERSONAL_Dni6 
+    ) 
+GO
+
+ALTER TABLE EQUIPO ADD CONSTRAINT EQUIPO_PK PRIMARY KEY CLUSTERED (Nombre_equipo)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE JORNADA 
+    (
+     N_jornada VARCHAR (20) NOT NULL , 
+     Fecha DATE NOT NULL , 
+     Goles_cabeza INTEGER NOT NULL , 
+     Goles_propia INTEGER NOT NULL , 
+     Goles_penalti INTEGER NOT NULL , 
+     Recaudacion_quinielas FLOAT (2) NOT NULL 
+    )
+GO
+
+ALTER TABLE JORNADA ADD CONSTRAINT JORNADA_PK PRIMARY KEY CLUSTERED (N_jornada)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE JUEZ_LINEA 
+    (
+     N_colegiado INTEGER NOT NULL , 
+     Posibilidad_prox_temp VARCHAR (50) NOT NULL , 
+     Edad INTEGER NOT NULL , 
+     JUEZ_LINEA_TYPE VARCHAR (10) NOT NULL 
+    )
+GO 
+
+
+ALTER TABLE JUEZ_LINEA 
+    ADD CONSTRAINT CH_INH_JUEZ_LINEA 
+    CHECK ( JUEZ_LINEA_TYPE IN ('JUEZ_LINEA') ) 
+GO
+
+ALTER TABLE JUEZ_LINEA ADD CONSTRAINT JUEZ_LINEA_PK PRIMARY KEY CLUSTERED (N_colegiado)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE JUGADOR 
+    (
+     Dni VARCHAR (10) NOT NULL , 
+     Alias VARCHAR (20) NOT NULL , 
+     Puesto VARCHAR (20) NOT NULL , 
+     Anos_contrato INTEGER NOT NULL , 
+     Clausula_rescision INTEGER NOT NULL , 
+     Anos_en_equipo INTEGER NOT NULL , 
+     PERSONAL_Dni VARCHAR (10) NOT NULL 
+    )
+GO 
+
+    
+
+
+CREATE UNIQUE NONCLUSTERED INDEX 
+    JUGADOR__IDX ON JUGADOR 
+    ( 
+     PERSONAL_Dni 
+    ) 
+GO
+
+ALTER TABLE JUGADOR ADD CONSTRAINT JUGADOR_PK PRIMARY KEY CLUSTERED (Dni)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE PARTIDO 
+    (
+     ID_Partido INTEGER NOT NULL , 
+     Fecha DATE NOT NULL , 
+     Resultado VARCHAR (20) NOT NULL , 
+     Recaudacion_taquilla FLOAT (2) NOT NULL , 
+     N_espectadores INTEGER NOT NULL , 
+     JORNADA_N_jornada VARCHAR (20) NOT NULL , 
+     TEMPORADA_Ano_temporada VARCHAR (20) NOT NULL , 
+     Hora TIME NOT NULL , 
+     EQUIPO_Nombre_equipo VARCHAR (20) NOT NULL , 
+     EQUIPO_Nombre_equipo1 VARCHAR (20) NOT NULL , 
+     JUEZ_LINEA_N_colegiado INTEGER NOT NULL , 
+     ARBITRO_N_colegiado INTEGER NOT NULL , 
+     Local BIT NOT NULL , 
+     Local2 BIT NOT NULL 
+    )
+GO
+
+ALTER TABLE PARTIDO ADD CONSTRAINT PARTIDO_PK PRIMARY KEY CLUSTERED (ID_Partido)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE PERSONAL 
+    (
+     Dni VARCHAR (10) NOT NULL , 
+     Nombre VARCHAR (20) NOT NULL , 
+     F_nacimiento DATE NOT NULL , 
+     Telefono VARCHAR (20) NOT NULL , 
+     Direccion VARCHAR (50) NOT NULL , 
+     Sueldo VARCHAR (50) NOT NULL , 
+     EQUIPO_Nombre_equipo VARCHAR (20) NOT NULL 
+    )
+GO
+
+ALTER TABLE PERSONAL ADD CONSTRAINT PERSONAL_PK PRIMARY KEY CLUSTERED (Dni)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+CREATE TABLE TEMPORADA 
+    (
+     Ano_temporada VARCHAR (20) NOT NULL 
+    )
+GO
+
+ALTER TABLE TEMPORADA ADD CONSTRAINT TEMPORADA_PK PRIMARY KEY CLUSTERED (Ano_temporada)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+GO
+
+ALTER TABLE ARBITRO 
+    ADD CONSTRAINT ARBITRO_COLEGIADO_FK FOREIGN KEY 
+    ( 
+     N_colegiado
+    ) 
+    REFERENCES COLEGIADO 
+    ( 
+     N_colegiado 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE EQUIPO 
+    ADD CONSTRAINT EQUIPO_PERSONAL_FK FOREIGN KEY 
+    ( 
+     PERSONAL_Dni
+    ) 
+    REFERENCES PERSONAL 
+    ( 
+     Dni 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE EQUIPO 
+    ADD CONSTRAINT EQUIPO_PERSONAL_FKv2 FOREIGN KEY 
+    ( 
+     PERSONAL_Dni2
+    ) 
+    REFERENCES PERSONAL 
+    ( 
+     Dni 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE EQUIPO 
+    ADD CONSTRAINT EQUIPO_PERSONAL_FKv3 FOREIGN KEY 
+    ( 
+     PERSONAL_Dni1
+    ) 
+    REFERENCES PERSONAL 
+    ( 
+     Dni 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE EQUIPO 
+    ADD CONSTRAINT EQUIPO_PERSONAL_FKv4 FOREIGN KEY 
+    ( 
+     PERSONAL_Dni3
+    ) 
+    REFERENCES PERSONAL 
+    ( 
+     Dni 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE EQUIPO 
+    ADD CONSTRAINT EQUIPO_PERSONAL_FKv5 FOREIGN KEY 
+    ( 
+     PERSONAL_Dni5
+    ) 
+    REFERENCES PERSONAL 
+    ( 
+     Dni 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE EQUIPO 
+    ADD CONSTRAINT EQUIPO_PERSONAL_FKv6 FOREIGN KEY 
+    ( 
+     PERSONAL_Dni6
+    ) 
+    REFERENCES PERSONAL 
+    ( 
+     Dni 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE JUEZ_LINEA 
+    ADD CONSTRAINT JUEZ_LINEA_COLEGIADO_FK FOREIGN KEY 
+    ( 
+     N_colegiado
+    ) 
+    REFERENCES COLEGIADO 
+    ( 
+     N_colegiado 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE JUGADOR 
+    ADD CONSTRAINT JUGADOR_PERSONAL_FK FOREIGN KEY 
+    ( 
+     Dni
+    ) 
+    REFERENCES PERSONAL 
+    ( 
+     Dni 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE JUGADOR 
+    ADD CONSTRAINT JUGADOR_PERSONAL_FKv1 FOREIGN KEY 
+    ( 
+     PERSONAL_Dni
+    ) 
+    REFERENCES PERSONAL 
+    ( 
+     Dni 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PARTIDO 
+    ADD CONSTRAINT PARTIDO_ARBITRO_FK FOREIGN KEY 
+    ( 
+     ARBITRO_N_colegiado
+    ) 
+    REFERENCES ARBITRO 
+    ( 
+     N_colegiado 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PARTIDO 
+    ADD CONSTRAINT PARTIDO_EQUIPO_FK FOREIGN KEY 
+    ( 
+     EQUIPO_Nombre_equipo
+    ) 
+    REFERENCES EQUIPO 
+    ( 
+     Nombre_equipo 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PARTIDO 
+    ADD CONSTRAINT PARTIDO_EQUIPO_FKv1 FOREIGN KEY 
+    ( 
+     EQUIPO_Nombre_equipo1
+    ) 
+    REFERENCES EQUIPO 
+    ( 
+     Nombre_equipo 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PARTIDO 
+    ADD CONSTRAINT PARTIDO_JORNADA_FK FOREIGN KEY 
+    ( 
+     JORNADA_N_jornada
+    ) 
+    REFERENCES JORNADA 
+    ( 
+     N_jornada 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PARTIDO 
+    ADD CONSTRAINT PARTIDO_JUEZ_LINEA_FK FOREIGN KEY 
+    ( 
+     JUEZ_LINEA_N_colegiado
+    ) 
+    REFERENCES JUEZ_LINEA 
+    ( 
+     N_colegiado 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PARTIDO 
+    ADD CONSTRAINT PARTIDO_TEMPORADA_FK FOREIGN KEY 
+    ( 
+     TEMPORADA_Ano_temporada
+    ) 
+    REFERENCES TEMPORADA 
+    ( 
+     Ano_temporada 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+ALTER TABLE PERSONAL 
+    ADD CONSTRAINT PERSONAL_EQUIPO_FK FOREIGN KEY 
+    ( 
+     EQUIPO_Nombre_equipo
+    ) 
+    REFERENCES EQUIPO 
+    ( 
+     Nombre_equipo 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO
+
+
+
+-- Informe de Resumen de Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                             9
+-- CREATE INDEX                             7
+-- ALTER TABLE                             28
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE DATABASE                          0
+-- CREATE DEFAULT                           0
+-- CREATE INDEX ON VIEW                     0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE ROLE                              0
+-- CREATE RULE                              0
+-- CREATE SCHEMA                            0
+-- CREATE SEQUENCE                          0
+-- CREATE PARTITION FUNCTION                0
+-- CREATE PARTITION SCHEME                  0
+-- 
+-- DROP DATABASE                            0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0
