@@ -55,7 +55,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="dirrecicon" id="80536171-6459-F584-D90B-181B540F8311">
+<Attribute name="direcicon" id="80536171-6459-F584-D90B-181B540F8311">
 <createdBy>DiegoDePablo</createdBy>
 <createdTime>2024-10-02 00:01:07 UTC</createdTime>
 <ownerDesignName>parques_naturales_ER</ownerDesignName>

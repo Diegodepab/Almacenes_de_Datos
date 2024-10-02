@@ -39,8 +39,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="escudo" id="C00A1A8E-8ECC-28A3-C669-14CABA0BA2D9">
 <createdBy>DiegoDePablo</createdBy>

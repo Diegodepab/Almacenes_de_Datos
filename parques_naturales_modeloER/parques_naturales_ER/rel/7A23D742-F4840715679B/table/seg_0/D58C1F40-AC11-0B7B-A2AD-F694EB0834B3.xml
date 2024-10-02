@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D58C1F40-AC11-0B7B-A2AD-F694EB0834B3" name="CONTIENE_ANIMALES">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>17ABB4FD-3317-BF68-B6F7-43011DC5F1E4</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="poblacion_estimada" id="024E965E-05B3-D7F8-CE53-03C684656A02">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>8AD719A8-C11A-228F-1290-E79D211144E2</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="esta_superpoblada" id="38BD3615-1306-1635-5021-B67282B11C31">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>35FBD02B-25ED-04B5-6AC7-7163CEB0700E</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARQUE_nombre" id="6C18D12A-24A9-D1B1-EB19-42747E188EE7">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>DBDB9699-AD5F-529E-863D-F348D09735EC</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="368A533F-9031-9DAA-A402-B902BF8D67B4" referredColumn="228AC8E7-E2E9-100B-560A-FE87D291D14C"/>
+</associations>
+</Column>
+<Column name="ANIMAL_nombre_cientifico" id="9254F872-0F9C-EE7D-0CC2-343E2678421C">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>5E79804A-E620-F027-7C38-210596967E04</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="944A97B1-9FA8-01C7-22A8-B77DCB65F2C7" referredColumn="6CF8707A-C815-F810-93E4-D63FD55C59AC"/>
+</associations>
+</Column>
+<Column name="ANIMAL_nombre_comun" id="D5FAD97B-3DA4-1221-7C27-6598E2F9D926">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>85294197-A37D-2243-E986-6C77016F2B4F</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="944A97B1-9FA8-01C7-22A8-B77DCB65F2C7" referredColumn="9F397235-A9E0-E2CC-B6D0-475D60B8F2C8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D2E90F4-9294-18C5-134F-B2C1A6F367CF" name="CONTIENE_ANIMALES_PK">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>E9E575CA-13C2-5888-CA9D-973E58DAD197</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C18D12A-24A9-D1B1-EB19-42747E188EE7"/>
+<colUsage columnID="9254F872-0F9C-EE7D-0CC2-343E2678421C"/>
+<colUsage columnID="D5FAD97B-3DA4-1221-7C27-6598E2F9D926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="496D13B3-BED6-CFBE-A529-D85B18378443" name="CONTIENE_ANIMALES_ANIMAL_FK">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>49364E29-EBB2-9AA9-CC7D-E6378F083F5D</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9254F872-0F9C-EE7D-0CC2-343E2678421C"/>
+<colUsage columnID="D5FAD97B-3DA4-1221-7C27-6598E2F9D926"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3AFFAD4B-D1BC-3462-D5FD-080ED6832EFE" name="CONTIENE_ANIMALES_PARQUE_FK">
+<createdBy>DiegoDePablo</createdBy>
+<createdTime>2024-10-02 00:15:05 UTC</createdTime>
+<generatorID>C7FBD365-5C8D-8E65-12A1-E5190C6E89AF</generatorID>
+<ownerDesignName>parques_naturales_ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C18D12A-24A9-D1B1-EB19-42747E188EE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

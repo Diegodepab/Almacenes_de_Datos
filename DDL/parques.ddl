@@ -1,5 +1,5 @@
 -- Generado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
---   en:        2024-10-02 01:46:38 CEST
+--   en:        2024-10-02 02:24:04 CEST
 --   sitio:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -10,27 +10,32 @@
 -- predefined type, no DDL - XMLTYPE
 
 CREATE TABLE animal (
-    nombre_cientifico VARCHAR2(50) NOT NULL,
-    nombre_comun      VARCHAR2(35),
-    vida_media        FLOAT(6),
-    espacio_medio     FLOAT(6)
+    nombre_cientifico   VARCHAR2(50) NOT NULL,
+    nombre_comun        VARCHAR2(35) NOT NULL,
+    vida_media          FLOAT(6),
+    extension_necesaria FLOAT(6)
 );
 
-ALTER TABLE animal ADD CONSTRAINT animal_pk PRIMARY KEY ( nombre_cientifico );
+ALTER TABLE animal ADD CONSTRAINT animal_pk PRIMARY KEY ( nombre_cientifico,
+                                                          nombre_comun );
 
 CREATE TABLE contiene_animales (
-    poblacion_est            INTEGER,
+    poblacion_estimada       INTEGER,
     esta_superpoblada        VARCHAR2(1),
     parque_nombre            VARCHAR2(60) NOT NULL,
-    animal_nombre_cientifico VARCHAR2(50) NOT NULL
+    animal_nombre_cientifico VARCHAR2(50) NOT NULL,
+    animal_nombre_comun      VARCHAR2(35) NOT NULL,
+	CONSTRAINT check_superpoblada CHECK (esta_superpoblada IN ('S', 'N')) -- RestricciÃ³n CHECK
 );
 
-ALTER TABLE contiene_animales ADD CONSTRAINT contiene_animales_pk PRIMARY KEY ( parque_nombre,
-                                                                                animal_nombre_cientifico );
+ALTER TABLE contiene_animales
+    ADD CONSTRAINT contiene_animales_pk PRIMARY KEY ( parque_nombre,
+                                                      animal_nombre_cientifico,
+                                                      animal_nombre_comun );
 
 CREATE TABLE municipio (
     nombre           VARCHAR2(30) NOT NULL,
-    web              VARCHAR2(40),
+    web              VARCHAR2(80),
     escudo           VARCHAR2(80),
     partido          VARCHAR2(50),
     num_hab          INTEGER,
@@ -41,15 +46,15 @@ CREATE TABLE municipio (
 ALTER TABLE municipio ADD CONSTRAINT municipio_pk PRIMARY KEY ( nombre );
 
 CREATE TABLE parque (
-    nombre               VARCHAR2(60) NOT NULL,
-    telefono             VARCHAR2(15),
-    dirección_administra VARCHAR2(50),
-    web                  VARCHAR2(55),
-    correo               VARCHAR2(50),
-    fech_declaracion     DATE,
-    extension            FLOAT(6),
-    num_municipios       INTEGER,
-    persona_dni          VARCHAR2(15) NOT NULL
+    nombre                   VARCHAR2(60) NOT NULL,
+    telefono                 VARCHAR2(15),
+    direccion_administrativa VARCHAR2(50),
+    web                      VARCHAR2(70),
+    correo                   VARCHAR2(50),
+    fech_declara             DATE,
+    extension_ha             FLOAT(6),
+    num_municipios           INTEGER,
+    persona_dni              VARCHAR2(15) NOT NULL
 );
 
 CREATE UNIQUE INDEX parque__idx ON
@@ -63,7 +68,7 @@ CREATE TABLE persona (
     dni           VARCHAR2(15) NOT NULL,
     nombre        VARCHAR2(35),
     fech_nac      DATE,
-    dirreccion    VARCHAR2(45),
+    direcicon     VARCHAR2(45),
     telefono      VARCHAR2(12),
     parque_nombre VARCHAR2(60)
 );
@@ -71,8 +76,10 @@ CREATE TABLE persona (
 ALTER TABLE persona ADD CONSTRAINT persona_pk PRIMARY KEY ( dni );
 
 ALTER TABLE contiene_animales
-    ADD CONSTRAINT contiene_animales_animal_fk FOREIGN KEY ( animal_nombre_cientifico )
-        REFERENCES animal ( nombre_cientifico );
+    ADD CONSTRAINT contiene_animales_animal_fk FOREIGN KEY ( animal_nombre_cientifico,
+                                                             animal_nombre_comun )
+        REFERENCES animal ( nombre_cientifico,
+                            nombre_comun );
 
 ALTER TABLE contiene_animales
     ADD CONSTRAINT contiene_animales_parque_fk FOREIGN KEY ( parque_nombre )

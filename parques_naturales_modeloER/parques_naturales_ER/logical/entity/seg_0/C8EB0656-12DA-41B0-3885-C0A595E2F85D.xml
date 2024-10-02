@@ -42,7 +42,7 @@
 <dataTypeSize>15</dataTypeSize>
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="direc_admin" id="65A86CEC-FF72-0F7C-33DF-ECC1B23E10BC">
+<Attribute name="direccion_administrativa" id="65A86CEC-FF72-0F7C-33DF-ECC1B23E10BC">
 <createdBy>DiegoDePablo</createdBy>
 <createdTime>2024-10-01 23:57:26 UTC</createdTime>
 <ownerDesignName>parques_naturales_ER</ownerDesignName>
