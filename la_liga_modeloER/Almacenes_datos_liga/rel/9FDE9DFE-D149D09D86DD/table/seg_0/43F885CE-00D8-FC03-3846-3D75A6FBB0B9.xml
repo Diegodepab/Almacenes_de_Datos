@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43F885CE-00D8-FC03-3846-3D75A6FBB0B9" name="JORNADA">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:57:14 UTC</createdTime>
+<generatorID>25EAE51C-7100-69CC-CCF7-0993275F95D2</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="N_jornada" id="43A24CBD-CEA0-06F9-E451-B4E2B4E01F84">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:57:14 UTC</createdTime>
+<generatorID>33FF6A5D-B4B8-7447-7987-3710EFA94D6B</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="46491034-AD51-C337-63E5-45EBAA611B68">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:57:14 UTC</createdTime>
+<generatorID>F9C042E7-D1D0-EE85-E5D6-6CE3E0A16ABB</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Goles_cabeza" id="B19B6855-482E-898C-A2E3-7EACC99F8410">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:57:14 UTC</createdTime>
+<generatorID>F63A0477-1FFD-A64B-977B-92EEBACE3BE3</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Goles_propia" id="EE66FEAC-CD1C-1717-02F6-C14AC861E910">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:57:14 UTC</createdTime>
+<generatorID>48EBEA59-BDAA-ADBD-A1EE-0A34808D5D90</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Goles_penalti" id="4A3ACECD-855A-3C6C-6A6C-721B5AE7C43F">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:57:14 UTC</createdTime>
+<generatorID>BB1698D6-D308-48A1-108C-805F7DD03936</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Recaudacion_quinielas" id="CF0C73A2-669F-EA24-2A32-E5DE758B2509">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:57:14 UTC</createdTime>
+<generatorID>3D3F18C8-19C2-8127-05C3-7174898E9F34</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,2,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CA68E78-9C5F-B50E-E136-952CA2240864" name="JORNADA_PK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:57:14 UTC</createdTime>
+<generatorID>47300F65-580F-6F2A-A060-73A19014E302</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43A24CBD-CEA0-06F9-E451-B4E2B4E01F84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

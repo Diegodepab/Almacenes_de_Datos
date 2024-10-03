@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="672DA6BC-C133-2610-F025-F7E08E0DCE4C" name="FKArc_1">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-01 17:49:02 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>27EE74A3-B80D-32F6-B295-CFEC5A9D8C32</table>
+<fkeys>
+<fkeyID>1D6C36C0-2B00-7920-854C-D27335FF8812</fkeyID>
+<fkeyID>F1670364-70EA-7847-DB55-6C76F8A1DB22</fkeyID>
+</fkeys>
+</FKArc>

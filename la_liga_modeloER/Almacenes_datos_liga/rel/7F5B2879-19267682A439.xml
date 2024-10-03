@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="7F5B2879-A1D8-58FB-6492-19267682A439" mainViewID="A9E0D57D-90B1-6366-915C-BF3DB5A434D8">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-01 17:48:57 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

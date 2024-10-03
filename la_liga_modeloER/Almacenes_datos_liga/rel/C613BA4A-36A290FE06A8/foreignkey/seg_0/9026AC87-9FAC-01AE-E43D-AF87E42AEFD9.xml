@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9026AC87-9FAC-01AE-E43D-AF87E42AEFD9" containerWithKeyObject="2A0018CE-8A9F-650E-F26A-9FAA77594652" localFKIndex="ED09725B-84F2-9E7F-F36F-7FF4F1FD5A66" name="ARBITRO_COLEGIADO_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>05261E8E-8A3F-78F6-C2CB-732D38657504</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<referredTableLongName>COLEGIADO</referredTableLongName>
+<arc>40EC512F-B402-FEE5-7DAD-65B0135F4C93</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>742BAB29-FBF9-8C44-34FF-5803E56D530A</referredTableID>
+<keyObject>61B5519C-F1E0-FB5A-B73A-9F923A0956CE</keyObject>
+<referredKeyID>61B5519C-F1E0-FB5A-B73A-9F923A0956CE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>N_colegiado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

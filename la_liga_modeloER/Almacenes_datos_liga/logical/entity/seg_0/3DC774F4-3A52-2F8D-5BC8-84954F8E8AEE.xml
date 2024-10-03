@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3DC774F4-3A52-2F8D-5BC8-84954F8E8AEE" name="ARBITRO">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:25:19 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>3EC89206-050D-5095-463B-7D5066551762</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Internacional" id="090E5D0E-E7BB-E1BC-524B-CF2E39C53E71">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:25:25 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ex_futbolista" id="5A5DD7B9-0CDA-7518-710B-D3919E06903D">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:25:25 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

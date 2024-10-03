@@ -1,0 +1,350 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1423B59E-59EA-BD64-DCDB-14EE6BC2BE77" name="EQUIPO">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>33454536-BA8F-6AFC-9694-6848CA922B6D</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nombre_equipo" id="C0110138-DF44-C3A2-BB28-AE52A416A1BF">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>A3AC4E1D-E729-F7BE-5FBA-19A11CBDB88F</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="N_socios" id="1EA9B029-615C-D14E-CA99-1E1E5AF61AF9">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>261A1AE7-91F0-0326-568A-6DA460F185AB</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Campo" id="2A2A1BF8-769B-A650-7823-4A161873F25F">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>A1350DE1-2F30-2584-EBCA-64840412C530</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ciudad" id="2BA33C63-CA32-B7D2-67F0-AC13EB9CE4FC">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>9C8DCB76-B763-D189-7A17-EE833A950BBD</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ano_fundacion" id="6D6A2266-22D8-E844-BECA-E3F5D3F05287">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>05FECA4A-68E1-F84F-601B-48AE796B2240</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Anos_en_primera" id="9ACCCAC0-5BD8-9F75-A75E-4989B9EE92FC">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>D5A3AC98-A628-7EEF-05EF-5FFF3BFB825C</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_fundador" id="8088E0E9-5486-D696-EA04-81BCE8606F18">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>354CD776-C8B8-DA30-FE2E-3864D0C6BC5C</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSONAL_Dni" id="E2F13275-D980-A237-7E73-1022360827CF">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>EDAA198E-E9A9-7408-3420-35CE5A2A1F1A</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37FE9C05-FCF4-63CD-4C52-289261AC4333" referredColumn="43CE91D2-1895-1BEB-E482-DA6847E06B8D"/>
+</associations>
+</Column>
+<Column name="Local" id="1DDDC5AC-ED11-540B-871C-43DBAF43E3A5">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>DDEE971A-E893-84C0-F473-4AFB6336CB4A</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<dependOnForeignKeyID>9C3CE231-46B5-6CCD-F756-BE6D3DD8265D</dependOnForeignKeyID>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="PERSONAL_Dni2" id="1B3C146A-FBF4-52E0-D2A0-70173D7E60CD">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<generatorID>9C32084D-3468-DCFC-4C9D-C8D270EE8EA3</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B1BB19B-A065-D5DB-0A65-D3EF110E17D8" referredColumn="43CE91D2-1895-1BEB-E482-DA6847E06B8D"/>
+</associations>
+</Column>
+<Column name="PERSONAL_Dni1" id="E76EBA78-CBE7-FEFE-4F8E-6C8C44391A2E">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<generatorID>91DE3929-6E86-813D-DAAD-7F5CD56E9D8E</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF0254D7-CCF8-4C9F-3BBC-E8F61F9FFA1D" referredColumn="43CE91D2-1895-1BEB-E482-DA6847E06B8D"/>
+</associations>
+</Column>
+<Column name="PERSONAL_Dni4" id="C6B831C4-6225-11AC-7437-64350EDB3AF2">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<generatorID>0CC52C2B-D047-735E-8C8B-90284ADEB314</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8724E97D-80F7-F3DF-479D-2E59481C08D0" referredColumn="43CE91D2-1895-1BEB-E482-DA6847E06B8D"/>
+</associations>
+</Column>
+<Column name="PERSONAL_Dni3" id="2EF9D575-36FE-A947-B8EF-AD0CE82270CC">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<generatorID>616A5785-7781-6D55-2EE6-6C54070E2B02</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3679BF0E-6736-8A31-4C42-4718E6119F09" referredColumn="43CE91D2-1895-1BEB-E482-DA6847E06B8D"/>
+</associations>
+</Column>
+<Column name="PERSONAL_Dni6" id="4E49EC5C-EF78-6295-1D66-B48A50D14840">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<generatorID>2D9F0943-2965-9098-1A15-E9BB081E0CE1</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3E49F88-3353-74A0-6391-8C3DEA572A8C" referredColumn="43CE91D2-1895-1BEB-E482-DA6847E06B8D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="663300D5-4E77-D63B-B774-AAA84F14FAB9" name="EQUIPO_PK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<generatorID>EAF82FEC-1693-A76A-A19F-8D987A959AD7</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0110138-DF44-C3A2-BB28-AE52A416A1BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE85F0CD-0AC8-F3A5-2F7C-A5F082E01020" name="EQUIPO__IDX">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:08 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E5FA6C13-ABCE-010A-899E-9E01DA2C5B9B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E2F13275-D980-A237-7E73-1022360827CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B19F3F3E-018E-755B-00DB-C1320F7B7FEE" name="EQUIPO__IDX">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>330B87B7-0E8F-3595-A09C-D6BF5DC482B0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4E49EC5C-EF78-6295-1D66-B48A50D14840"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EE8851E-3DD7-2F36-EEEA-4E1313714C2E" name="EQUIPO__IDXv1">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>05069B53-79E6-8355-89EB-E12738FEE2C3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E76EBA78-CBE7-FEFE-4F8E-6C8C44391A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53E2FEC3-D27C-F2DB-FCB2-704B7EB0F6E0" name="EQUIPO__IDXv2">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>68327DC7-3F52-31B4-2A30-D9A5CF67B3DC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1B3C146A-FBF4-52E0-D2A0-70173D7E60CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0A77D84-A8EF-769F-CA79-715C2B60EE7A" name="EQUIPO__IDXv3">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0954B74C-0148-C5AD-9CD3-C797E63B97DB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2EF9D575-36FE-A947-B8EF-AD0CE82270CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74AF87E5-52C7-B59E-E411-A6D173BDF26D" name="EQUIPO__IDXv4">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:30:03 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2E13B161-13E4-39D3-3BEF-E8C4B8852D33</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="C6B831C4-6225-11AC-7437-64350EDB3AF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D08ED62-849C-488C-C158-41DDEA64905A" name="EQUIPO_PERSONAL_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 15:26:40 UTC</createdTime>
+<generatorID>E5FA6C13-ABCE-010A-899E-9E01DA2C5B9B</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2F13275-D980-A237-7E73-1022360827CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7A3F060-52DA-8231-BBD8-6EB139F0F429" name="EQUIPO_PERSONAL_FKv2">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:34:31 UTC</createdTime>
+<generatorID>330B87B7-0E8F-3595-A09C-D6BF5DC482B0</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E49EC5C-EF78-6295-1D66-B48A50D14840"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A9FAD13-59F1-8A77-4093-4B3AFF8AC5C4" name="EQUIPO_PERSONAL_FKv3">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:34:31 UTC</createdTime>
+<generatorID>05069B53-79E6-8355-89EB-E12738FEE2C3</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E76EBA78-CBE7-FEFE-4F8E-6C8C44391A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5C7A234-957D-856F-B0D8-2F6A20E38EF9" name="EQUIPO_PERSONAL_FKv4">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:34:31 UTC</createdTime>
+<generatorID>68327DC7-3F52-31B4-2A30-D9A5CF67B3DC</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B3C146A-FBF4-52E0-D2A0-70173D7E60CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD659F1D-DC0B-2249-A68D-A00603D1C346" name="EQUIPO_PERSONAL_FKv5">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:34:31 UTC</createdTime>
+<generatorID>0954B74C-0148-C5AD-9CD3-C797E63B97DB</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EF9D575-36FE-A947-B8EF-AD0CE82270CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="378A630F-1BA9-0925-FC3B-88BCE039B214" name="EQUIPO_PERSONAL_FKv6">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:34:31 UTC</createdTime>
+<generatorID>2E13B161-13E4-39D3-3BEF-E8C4B8852D33</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6B831C4-6225-11AC-7437-64350EDB3AF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

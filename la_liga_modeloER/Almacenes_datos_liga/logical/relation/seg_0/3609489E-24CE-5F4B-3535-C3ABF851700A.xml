@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_14" directorySegmentName="seg_0" id="3609489E-24CE-5F4B-3535-C3ABF851700A">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-01 12:50:16 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<sourcePk>EAF82FEC-1693-A76A-A19F-8D987A959AD7</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>juega</nameOnSource>
+<nameOnTarget>es jugado</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>33454536-BA8F-6AFC-9694-6848CA922B6D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C0E2D57C-108D-6940-A313-00D93C26D621</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Local2" id="C540104E-11FD-BECB-CEBE-7992515A352B">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-01 12:51:05 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

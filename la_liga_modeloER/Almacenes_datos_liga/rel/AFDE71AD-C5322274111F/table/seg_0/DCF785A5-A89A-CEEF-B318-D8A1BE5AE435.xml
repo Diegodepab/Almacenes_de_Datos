@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DCF785A5-A89A-CEEF-B318-D8A1BE5AE435" name="PARTIDO">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>C0E2D57C-108D-6940-A313-00D93C26D621</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Partido" id="529B1AAF-8999-2F76-1511-9FA7744A76E3">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>EDC47F97-81D8-6D16-537E-0CB0B36CFB75</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="4FF0C94A-4A84-301B-5A8F-ED399F2DE610">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>58DF1882-321A-8DC5-536C-A21343F9A360</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resultado" id="E93C8A86-9BDF-6CA9-1256-D1CDCB15B62C">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>E1DCB053-ED92-36F7-E42D-DA0803B6AC37</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Recaudacion_taquilla" id="64AC8FB0-6FD0-8E1A-74F3-EAE7F04DCB2D">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>3706EA38-C265-9FBB-BC7B-3854F67AA4C0</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,2,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="N_espectadores" id="51CF4C29-DE3A-0D1E-CEE5-1FB825FE0061">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>808EB1FF-E223-F55D-7D0D-E9EF304DA45A</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JORNADA_N_jornada" id="28DB3172-8BA8-689D-790B-7051078A673A">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>C0C863DF-0CE7-CE7E-CDDA-8E595ABBC9F4</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="884CB5FC-4B9D-5FC6-5BEA-0E7B46DB3DF5" referredColumn="9CC710A3-6851-22F4-49F0-BCB65EE5976D"/>
+</associations>
+</Column>
+<Column name="JUGADOR_Alias" id="EEE591B7-D9B1-343C-2E66-1F76C7EC11E5">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>BAD316DE-3C16-27F3-04D2-652F63D1129E</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6020D7F6-01C2-916B-A02D-CD0800529400" referredColumn="AD66AC13-77FA-EF28-BA76-591DE1099709"/>
+</associations>
+</Column>
+<Column name="TEMPORADA_Ano_temporada" id="BB9C48A6-18CA-25C8-37B0-CD15A60F95E5">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>709DFEF1-96D3-9759-73B5-7ADA010FF489</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5335069-93A4-A814-8B37-838B0D965F52" referredColumn="C01F6395-5D1F-5DF6-5B95-9A7CB5280285"/>
+</associations>
+</Column>
+<Column name="Hora" id="4576196F-AA71-118E-9C6C-E18378B2F8D8">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>5DD2C512-A20D-9C63-6669-E6DE952F34EB</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLEGIADO_N_colegiado" id="4402AF83-590D-3E30-6B4E-81155695CB01">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>82B9BB0E-FEDB-D2DB-7481-9B1FBBE8D058</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B05A0DA7-9C46-D8A8-967B-ED07E06510DB" referredColumn="3B77996E-2C36-881B-5DD8-5F3AB8A2980D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D029741-9A26-FDAA-B01F-2E95E44A543F" name="PARTIDO_PK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>6B4BF047-C13A-9FB9-8428-CEB8817F071B</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="529B1AAF-8999-2F76-1511-9FA7744A76E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3ED65B8-E914-D205-D174-73E841819C8A" name="PARTIDO_COLEGIADO_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>458F45FF-B3F2-165E-F9CA-DD6D69A30CCC</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4402AF83-590D-3E30-6B4E-81155695CB01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64CB0FC7-8F80-812B-E687-BBB49CE679B6" name="PARTIDO_JORNADA_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>CD19722B-2CD0-AFE0-15B3-815B82A38F48</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28DB3172-8BA8-689D-790B-7051078A673A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5B7AAEE-EDFF-D910-1739-DC81624C5D89" name="PARTIDO_JUGADOR_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>AFB2CCFF-61C5-061E-543B-ED8797EC2E2C</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEE591B7-D9B1-343C-2E66-1F76C7EC11E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23E3A23D-59A1-E765-335A-37FA9887DD90" name="PARTIDO_TEMPORADA_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>24EA88C5-4021-4FC6-E355-D50FED057675</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB9C48A6-18CA-25C8-37B0-CD15A60F95E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

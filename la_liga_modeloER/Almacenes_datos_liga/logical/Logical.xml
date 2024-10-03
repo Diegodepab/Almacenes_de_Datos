@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="525A236E-180B-CE94-E208-C34C7674E405" mainViewID="F1DE6682-1C1C-0791-825D-86D7A778BBD6">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:48:14 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

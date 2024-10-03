@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56C0AA67-E715-6238-5D89-B9533EC7C4FB" name="TEMPORADA">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:38:55 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="C613BA4A-5656-E749-3EE1-36A290FE06A8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Ano_temporada" id="033BF848-75F7-1800-54E0-807B3252A5D9">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:39:01 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="C613BA4A-5656-E749-3EE1-36A290FE06A8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="798197DD-C6E3-0386-F21F-7006F7F68D2A" name="TEMPORADA PK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:39:09 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C613BA4A-5656-E749-3EE1-36A290FE06A8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>033BF848-75F7-1800-54E0-807B3252A5D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

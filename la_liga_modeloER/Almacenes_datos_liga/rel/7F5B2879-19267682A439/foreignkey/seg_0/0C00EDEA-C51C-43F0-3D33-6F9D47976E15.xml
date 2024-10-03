@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0C00EDEA-C51C-43F0-3D33-6F9D47976E15" containerWithKeyObject="96526F10-6877-5DEE-13B9-B43C75F2467D" localFKIndex="7393CD0B-94A8-4D3A-BFF4-0475E3E01329" name="PARTIDO_ARBITRO_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-01 17:49:02 UTC</createdTime>
+<generatorID>FD7E0F75-65DA-1F39-7D9E-DD344F3E2688</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<referredTableLongName>ARBITRO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4B65C18C-1B06-1178-8F5E-2B5D2320A092</referredTableID>
+<keyObject>B4355011-6EC0-2E9F-B06C-6DB421CA3580</keyObject>
+<referredKeyID>B4355011-6EC0-2E9F-B06C-6DB421CA3580</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>N_colegiado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

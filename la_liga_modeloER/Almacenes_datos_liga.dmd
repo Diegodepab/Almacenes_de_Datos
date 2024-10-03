@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Almacenes_datos_liga" id="3DC03103-4AD0-FE78-088E-ACA3E46F410C" version="3.5">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:48:14 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3DC03103-4AD0-FE78-088E-ACA3E46F410C</designId>
+</OSDM_Design>

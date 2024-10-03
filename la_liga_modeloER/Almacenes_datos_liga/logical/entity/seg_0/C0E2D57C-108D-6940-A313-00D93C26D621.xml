@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C0E2D57C-108D-6940-A313-00D93C26D621" name="PARTIDO">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:30:12 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Partido" id="EDC47F97-81D8-6D16-537E-0CB0B36CFB75">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:30:20 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="58DF1882-321A-8DC5-536C-A21343F9A360">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:30:44 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Resultado" id="E1DCB053-ED92-36F7-E42D-DA0803B6AC37">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:31:24 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Recaudacion_taquilla" id="3706EA38-C265-9FBB-BC7B-3854F67AA4C0">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:31:37 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,2,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="N_espectadores" id="808EB1FF-E223-F55D-7D0D-E9EF304DA45A">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:31:57 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="N_jornada" id="C0C863DF-0CE7-CE7E-CDDA-8E595ABBC9F4">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:39:10 UTC</createdTime>
+<generatorID>CD19722B-2CD0-AFE0-15B3-815B82A38F48</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>33FF6A5D-B4B8-7447-7987-3710EFA94D6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ano_temporada" id="709DFEF1-96D3-9759-73B5-7ADA010FF489">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:52:31 UTC</createdTime>
+<generatorID>24EA88C5-4021-4FC6-E355-D50FED057675</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>033BF848-75F7-1800-54E0-807B3252A5D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Hora" id="5DD2C512-A20D-9C63-6669-E6DE952F34EB">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 11:34:34 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_equipo" id="C8D3AF18-2EDD-7885-8677-9AF1124939B6">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:34:25 UTC</createdTime>
+<generatorID>5A89833D-10E0-3DC6-F7BF-2EF4E71A6D12</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>A3AC4E1D-E729-F7BE-5FBA-19A11CBDB88F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_equipo1" id="F6B3D7FD-C8C6-414F-CC43-57BC831F4395">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-01 12:50:16 UTC</createdTime>
+<generatorID>3609489E-24CE-5F4B-3535-C3ABF851700A</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>A3AC4E1D-E729-F7BE-5FBA-19A11CBDB88F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="N_colegiado" id="98F10D60-9333-CEA5-DC0C-91465CA7A3E9">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-01 15:56:05 UTC</createdTime>
+<generatorID>12794B59-E210-F577-2615-B8A4A0732A1A</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>6DEDFB94-90BD-00EC-CED5-39D2D2496CC9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="N_colegiado1" id="E7B578CA-F8DE-4529-657C-D1744B7F2EA2">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-01 15:56:22 UTC</createdTime>
+<generatorID>FD7E0F75-65DA-1F39-7D9E-DD344F3E2688</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>6DEDFB94-90BD-00EC-CED5-39D2D2496CC9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6B4BF047-C13A-9FB9-8428-CEB8817F071B" name="PARTIDO PK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 23:30:37 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EDC47F97-81D8-6D16-537E-0CB0B36CFB75</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

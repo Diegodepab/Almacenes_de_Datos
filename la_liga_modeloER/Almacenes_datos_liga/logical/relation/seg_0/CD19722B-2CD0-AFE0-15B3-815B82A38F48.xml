@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_2" directorySegmentName="seg_0" id="CD19722B-2CD0-AFE0-15B3-815B82A38F48">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 09:39:10 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="C613BA4A-5656-E749-3EE1-36A290FE06A8" value="true"/>
+</engineerTo>
+<sourcePk>47300F65-580F-6F2A-A060-73A19014E302</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>se juegan</nameOnSource>
+<nameOnTarget>se juegan</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>25EAE51C-7100-69CC-CCF7-0993275F95D2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C0E2D57C-108D-6940-A313-00D93C26D621</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

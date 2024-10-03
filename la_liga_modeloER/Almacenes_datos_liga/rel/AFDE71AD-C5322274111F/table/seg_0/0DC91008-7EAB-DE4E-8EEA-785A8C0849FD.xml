@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DC91008-7EAB-DE4E-8EEA-785A8C0849FD" name="JUEZ_LINEA">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>DC2C2760-8B98-383B-BA2F-30FAE146D759</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="N_colegiado" id="FF479CB2-F288-10F1-C98B-E5A0A70EA42D">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>6DEDFB94-90BD-00EC-CED5-39D2D2496CC9</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="895E64EE-2538-5A3F-EF82-C9FEF86991A7" referredColumn="3B77996E-2C36-881B-5DD8-5F3AB8A2980D"/>
+</associations>
+</Column>
+<Column name="Posibilidad_prox_temp" id="990D4787-1F29-EC9E-A33C-08E3CBB2DAD8">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>3FB2FD56-6979-C63F-93A3-3F815C181DA1</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Edad" id="0C0094C3-29EA-7F0D-E8BF-258D9D30DCAA">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>525BDCD9-3D14-7E5A-4874-646607D0910D</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E67CE32-919F-F3DA-3FEF-AC61F8FCD5B4" name="JUEZ_LINEA_PK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>022FF264-8715-A53C-4F18-B9D4AE10B25C</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF479CB2-F288-10F1-C98B-E5A0A70EA42D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98A85842-F3FC-8279-2476-FC1CA25DE75D" name="JUEZ_LINEA_COLEGIADO_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 12:30:20 UTC</createdTime>
+<generatorID>5E9E85A3-9E90-4F9E-AA78-DD58EECD7DA6</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF479CB2-F288-10F1-C98B-E5A0A70EA42D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="presidente_del_club" directorySegmentName="seg_0" id="2E13B161-13E4-39D3-3BEF-E8C4B8852D33">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:23:58 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="C613BA4A-5656-E749-3EE1-36A290FE06A8" value="true"/>
+</engineerTo>
+<sourcePk>EAF82FEC-1693-A76A-A19F-8D987A959AD7</sourcePk>
+<targetPk>DE65E879-D16B-0DFD-BEB1-C933D748A808</targetPk>
+<identifying>false</identifying>
+<nameOnSource>es presidido</nameOnSource>
+<nameOnTarget>preside</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>33454536-BA8F-6AFC-9694-6848CA922B6D</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9577D22D-4D25-FFBA-A180-6B1BB58177F1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

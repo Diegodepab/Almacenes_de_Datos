@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A5409D44-CE72-462B-8566-CA615A58A45E" containerWithKeyObject="5A63DA77-E574-D5E4-44E5-CA8AF9CACF1A" localFKIndex="8AA02468-47EB-041C-860B-E5581D3ABA19" name="PARTIDO_TEMPORADA_FK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-28 15:51:44 UTC</createdTime>
+<generatorID>24EA88C5-4021-4FC6-E355-D50FED057675</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<referredTableLongName>TEMPORADA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3A87C263-36DA-C4BC-8A94-D66680D8A6EA</referredTableID>
+<keyObject>360913D8-A221-EED7-B289-DE448593B7D5</keyObject>
+<referredKeyID>360913D8-A221-EED7-B289-DE448593B7D5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Ano_temporada</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

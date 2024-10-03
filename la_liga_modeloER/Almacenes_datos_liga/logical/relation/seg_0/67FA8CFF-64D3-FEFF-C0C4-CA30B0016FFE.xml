@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="entrenador" directorySegmentName="seg_0" id="67FA8CFF-64D3-FEFF-C0C4-CA30B0016FFE">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:17:10 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<sourcePk>DE65E879-D16B-0DFD-BEB1-C933D748A808</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>es entrenado</nameOnSource>
+<nameOnTarget>entrena </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9577D22D-4D25-FFBA-A180-6B1BB58177F1</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B9B88199-BAA5-EA67-6745-FDAE7C496B99</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

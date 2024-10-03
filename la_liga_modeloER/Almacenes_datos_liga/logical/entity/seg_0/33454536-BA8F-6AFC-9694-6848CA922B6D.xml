@@ -1,0 +1,213 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33454536-BA8F-6AFC-9694-6848CA922B6D" name="EQUIPO">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:48:38 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre_equipo" id="A3AC4E1D-E729-F7BE-5FBA-19A11CBDB88F">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:48:48 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="N_socios" id="261A1AE7-91F0-0326-568A-6DA460F185AB">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:49:24 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Campo" id="A1350DE1-2F30-2584-EBCA-64840412C530">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:49:44 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ciudad" id="9C8DCB76-B763-D189-7A17-EE833A950BBD">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:50:09 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ano_fundacion" id="05FECA4A-68E1-F84F-601B-48AE796B2240">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:52:49 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Anos_en_primera" id="D5A3AC98-A628-7EEF-05EF-5FFF3BFB825C">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:53:20 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_fundador" id="354CD776-C8B8-DA30-FE2E-3864D0C6BC5C">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:53:37 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dni" id="9C32084D-3468-DCFC-4C9D-C8D270EE8EA3">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:22:01 UTC</createdTime>
+<generatorID>68327DC7-3F52-31B4-2A30-D9A5CF67B3DC</generatorID>
+<notes><![CDATA[medico]]></notes>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>1DDED23B-C92F-0DF9-9CDE-ECA3AAA738F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dni1" id="91DE3929-6E86-813D-DAAD-7F5CD56E9D8E">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:23:52 UTC</createdTime>
+<generatorID>05069B53-79E6-8355-89EB-E12738FEE2C3</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>1DDED23B-C92F-0DF9-9CDE-ECA3AAA738F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dni2" id="0CC52C2B-D047-735E-8C8B-90284ADEB314">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:24:35 UTC</createdTime>
+<generatorID>2E13B161-13E4-39D3-3BEF-E8C4B8852D33</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>1DDED23B-C92F-0DF9-9CDE-ECA3AAA738F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dni3" id="616A5785-7781-6D55-2EE6-6C54070E2B02">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-30 22:26:49 UTC</createdTime>
+<generatorID>0954B74C-0148-C5AD-9CD3-C797E63B97DB</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>1DDED23B-C92F-0DF9-9CDE-ECA3AAA738F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dni4" id="F77C714F-FA01-CF63-A8A2-F57D0506F4B3">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-02 10:50:38 UTC</createdTime>
+<generatorID>855AF3C9-68DE-8C1A-4D38-F5908D88A82E</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>1DDED23B-C92F-0DF9-9CDE-ECA3AAA738F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dni5" id="5AED2D76-8CC5-369C-6349-B01F01F67E6C">
+<createdBy>jismb</createdBy>
+<createdTime>2024-10-02 10:54:51 UTC</createdTime>
+<generatorID>1BBE8CF1-EADB-6EBF-A290-61083FF7FD33</generatorID>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="true"/>
+</engineerTo>
+<referedAttribute>1DDED23B-C92F-0DF9-9CDE-ECA3AAA738F6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EAF82FEC-1693-A76A-A19F-8D987A959AD7" name="Equipo PK">
+<createdBy>jismb</createdBy>
+<createdTime>2024-09-27 22:49:02 UTC</createdTime>
+<ownerDesignName>Almacenes_datos_liga</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F5B2879-A1D8-58FB-6492-19267682A439" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A3AC4E1D-E729-F7BE-5FBA-19A11CBDB88F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
