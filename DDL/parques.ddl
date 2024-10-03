@@ -29,7 +29,10 @@ CREATE TABLE animal (
 );
 
 ALTER TABLE animal ADD CONSTRAINT animal_pk PRIMARY KEY ( nombre_cientifico,
-                                                          nombre_comun );
+                                                          nombre_comun ) WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON );
+
 
 CREATE TABLE contiene_animales (
     poblacion_estimada       INTEGER,
@@ -55,7 +58,10 @@ CREATE TABLE municipio (
     parque_nombre    VARCHAR(60) NOT NULL
 );
 
-ALTER TABLE municipio ADD CONSTRAINT municipio_pk PRIMARY KEY ( nombre );
+ALTER TABLE municipio ADD CONSTRAINT municipio_pk PRIMARY KEY ( nombre ) WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON );
+
 
 CREATE TABLE parque (
     nombre                   VARCHAR(60) NOT NULL,
@@ -69,20 +75,25 @@ CREATE TABLE parque (
     persona_dni              VARCHAR(15) NOT NULL
 );
 
-CREATE UNIQUE INDEX parque__idx ON parque ( persona_dni ASC );
+CREATE UNIQUE NONCLUSTERED INDEX parque__idx ON parque ( persona_dni ASC );
 
-ALTER TABLE parque ADD CONSTRAINT parque_pk PRIMARY KEY ( nombre );
+ALTER TABLE parque ADD CONSTRAINT parque_pk PRIMARY KEY ( nombre )WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON );
 
 CREATE TABLE persona (
     dni           VARCHAR(15) NOT NULL,
     nombre        VARCHAR(35),
     fech_nac      DATE,
-    direccion     VARCHAR(45), -- Corregido de 'direcicon'
+    direccion     VARCHAR(45),
     telefono      VARCHAR(12),
-    parque_nombre VARCHAR(60)
+    parque_nombre VARCHAR(60),
+    rol           VARCHAR(20) NOT NULL CHECK (rol IN ('Presidente', 'Consejero'))  -- Añadido campo de rol
 );
 
-ALTER TABLE persona ADD CONSTRAINT persona_pk PRIMARY KEY ( dni );
+ALTER TABLE persona ADD CONSTRAINT persona_pk PRIMARY KEY CLUSTERED ( dni )WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON );
 
 ALTER TABLE contiene_animales
     ADD CONSTRAINT contiene_animales_animal_fk FOREIGN KEY ( animal_nombre_cientifico,
@@ -92,16 +103,15 @@ ALTER TABLE contiene_animales
 
 ALTER TABLE contiene_animales
     ADD CONSTRAINT contiene_animales_parque_fk FOREIGN KEY ( parque_nombre )
-        REFERENCES parque ( nombre );
+        REFERENCES parque ( nombre )    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION ;
 
 ALTER TABLE municipio
     ADD CONSTRAINT municipio_parque_fk FOREIGN KEY ( parque_nombre )
-        REFERENCES parque ( nombre );
+        REFERENCES parque ( nombre )    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION ;
 
 ALTER TABLE parque
     ADD CONSTRAINT parque_persona_fk FOREIGN KEY ( persona_dni )
-        REFERENCES persona ( dni );
-
-ALTER TABLE persona
-    ADD CONSTRAINT persona_parque_fk FOREIGN KEY ( parque_nombre )
-        REFERENCES parque ( nombre );
+        REFERENCES persona ( dni )    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION ;
