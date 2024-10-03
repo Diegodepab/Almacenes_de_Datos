@@ -1,4 +1,3 @@
-
 INSERT INTO COLEGIADO (N_colegiado, Nombre, DNI, Antiguedad, Categoria_ano_anterior, Tipo_colegiado) VALUES (1, 'Juan Perez', 'DNI123456', 10, 'Primera', 'Principal');
 INSERT INTO COLEGIADO (N_colegiado, Nombre, DNI, Antiguedad, Categoria_ano_anterior, Tipo_colegiado) VALUES (2, 'Carlos Lopez', 'DNI654321', 8, 'Segunda', 'Asistente');
 INSERT INTO COLEGIADO (N_colegiado, Nombre, DNI, Antiguedad, Categoria_ano_anterior, Tipo_colegiado) VALUES (3, 'Ana Ruiz', 'DNI789123', 12, 'Primera', 'Principal');
@@ -13,18 +12,18 @@ INSERT INTO COLEGIADO (N_colegiado, Nombre, DNI, Antiguedad, Categoria_ano_anter
 
 INSERT INTO COLEGIADO (N_colegiado, Nombre, DNI, Antiguedad, Categoria_ano_anterior, Tipo_colegiado)
 VALUES
-(11, 'Jorge S√°nchez', '12345678A', 5, 'Primera', 'Principal'),
-(12, 'Mar√≠a L√≥pez', '23456789B', 8, 'Segunda', 'Asistente'),
-(13, 'Luis Fern√°ndez', '34567890C', 3, 'Primera', 'Principal'),
-(14, 'Ana P√©rez', '45678901D', 7, 'Tercera', 'Principal'),
-(15, 'Carlos Ram√≠rez', '56789012E', 2, 'Primera', 'Principal'),
-(16, 'Laura Garc√≠a', '67890123F', 6, 'Segunda', 'Asistente'),
+(11, 'Jorge S·nchez', '12345678A', 5, 'Primera', 'Principal'),
+(12, 'MarÌa LÛpez', '23456789B', 8, 'Segunda', 'Asistente'),
+(13, 'Luis Fern·ndez', '34567890C', 3, 'Primera', 'Principal'),
+(14, 'Ana PÈrez', '45678901D', 7, 'Tercera', 'Principal'),
+(15, 'Carlos RamÌrez', '56789012E', 2, 'Primera', 'Principal'),
+(16, 'Laura GarcÌa', '67890123F', 6, 'Segunda', 'Asistente'),
 (17, 'Fernando Torres', '78901234G', 9, 'Primera', 'Principal'),
 (18, 'Sara Moreno', '89012345H', 4, 'Segunda', 'Asistente'),
-(19, 'Pablo Mart√≠n', '90123456I', 1, 'Primera', 'Principal'),
+(19, 'Pablo MartÌn', '90123456I', 1, 'Primera', 'Principal'),
 (20, 'Elena Ruiz', '01234567J', 10, 'Tercera', 'Principal');
 
--- Insertar √°rbitros en la tabla ARBITRO
+-- Insertar ·rbitros en la tabla ARBITRO
 INSERT INTO ARBITRO (N_colegiado, Internacional, Ex_futbolista, ARBITRO_TYPE) VALUES (1, 1, 0, 'ARBITRO');
 INSERT INTO ARBITRO (N_colegiado, Internacional, Ex_futbolista, ARBITRO_TYPE) VALUES (2, 0, 1, 'ARBITRO');
 INSERT INTO ARBITRO (N_colegiado, Internacional, Ex_futbolista, ARBITRO_TYPE) VALUES (3, 1, 0, 'ARBITRO');
@@ -61,68 +60,68 @@ ALTER COLUMN EQUIPO_Nombre_equipo VARCHAR(20) NULL;
 INSERT INTO PERSONAL (DNI, Nombre, F_nacimiento, Telefono, Direccion, Sueldo, EQUIPO_Nombre_equipo) VALUES
 ('12345678A', 'Mario Gomez', '1985-03-25', '612345678', 'Calle Falsa 123, Madrid', 30000, 'FC Barcelona'),
 ('23456789B', 'Laura Martinez', '1990-06-15', '623456789', 'Avenida Siempre Viva 742, Sevilla', 32000, 'Real Madrid'),
-('34567890C', 'Carlos Ruiz', '1988-11-30', '634567890', 'Paseo del Prado 456, Valencia', 35000, 'Atl√©tico de Madrid'),
+('34567890C', 'Carlos Ruiz', '1988-11-30', '634567890', 'Paseo del Prado 456, Valencia', 35000, 'AtlÈtico de Madrid'),
 ('45678901D', 'Sofia Lopez', '1992-02-20', '645678901', 'Calle Gran Via 1, Barcelona', 31000, 'Sevilla FC'),
 ('56789012E', 'David Fernandez', '1986-09-12', '656789012', 'Calle Mayor 99, Bilbao', 34000, 'Valencia CF'),
 ('67890123F', 'Isabel Torres', '1984-01-05', '667890123', 'Plaza Mayor 5, Zaragoza', 36000, 'FC Barcelona'),
 ('78901234G', 'Antonio Ramos', '1995-04-18', '678901234', 'Calle del Mar 87, Malaga', 30000, 'Real Madrid'),
-('89012345H', 'Cristina Jimenez', '1991-07-27', '689012345', 'Avenida de la Paz 34, Granada', 31000, 'Atl√©tico de Madrid'),
-('90123456I', 'Javier S√°nchez', '1989-05-10', '612345678', 'Calle de la Libertad 44, Toledo', 33000, 'Sevilla FC'),
+('89012345H', 'Cristina Jimenez', '1991-07-27', '689012345', 'Avenida de la Paz 34, Granada', 31000, 'AtlÈtico de Madrid'),
+('90123456I', 'Javier S·nchez', '1989-05-10', '612345678', 'Calle de la Libertad 44, Toledo', 33000, 'Sevilla FC'),
 ('01234567J', 'Patricia Castillo', '1993-12-01', '623456789', 'Calle del Sol 18, Murcia', 32000, 'Valencia CF');
 
 INSERT INTO PERSONAL (DNI, Nombre, F_nacimiento, Telefono, Direccion, Sueldo, EQUIPO_Nombre_equipo) VALUES
-('22222222A', 'Andr√©s Mart√≠n', '1985-01-25', '612345678', 'Calle Verde 10, Madrid', 35000, 'FC Barcelona'),
-('33333333B', 'Rosa L√≥pez', '1989-02-14', '623456789', 'Avenida Azul 20, Sevilla', 34000, 'Real Madrid'),
-('44444444C', 'Francisco Torres', '1990-03-05', '634567890', 'Paseo Rojo 30, Valencia', 36000, 'Atl√©tico de Madrid'),
+('22222222A', 'AndrÈs MartÌn', '1985-01-25', '612345678', 'Calle Verde 10, Madrid', 35000, 'FC Barcelona'),
+('33333333B', 'Rosa LÛpez', '1989-02-14', '623456789', 'Avenida Azul 20, Sevilla', 34000, 'Real Madrid'),
+('44444444C', 'Francisco Torres', '1990-03-05', '634567890', 'Paseo Rojo 30, Valencia', 36000, 'AtlÈtico de Madrid'),
 ('55555555D', 'Beatriz Medina', '1988-04-16', '645678901', 'Calle Amarilla 40, Barcelona', 37000, 'Sevilla FC'),
 ('66666666E', 'Fernando Ruiz', '1986-05-27', '656789012', 'Calle Naranja 50, Bilbao', 38000, 'Valencia CF'),
-('77777777F', 'Mar√≠a G√≥mez', '1984-06-12', '667890123', 'Calle Purpura 60, Zaragoza', 39000, 'FC Barcelona'),
-('88888888G', 'Jos√© Antonio Jim√©nez', '1987-07-21', '678901234', 'Calle Blanca 70, M√°laga', 34000, 'Real Madrid'),
-('99999999H', 'Carla S√°nchez', '1991-08-30', '689012345', 'Calle Marr√≥n 80, Granada', 31000, 'Atl√©tico de Madrid'),
-('00000000I', 'Hugo Mart√≠nez', '1993-09-10', '612345678', 'Calle Celeste 90, Toledo', 32000, 'Sevilla FC'),
-('11111111J', 'Cristina Fern√°ndez', '1992-10-22', '623456789', 'Calle Verde 100, Murcia', 33000, 'Valencia CF'),
+('77777777F', 'MarÌa GÛmez', '1984-06-12', '667890123', 'Calle Purpura 60, Zaragoza', 39000, 'FC Barcelona'),
+('88888888G', 'JosÈ Antonio JimÈnez', '1987-07-21', '678901234', 'Calle Blanca 70, M·laga', 34000, 'Real Madrid'),
+('99999999H', 'Carla S·nchez', '1991-08-30', '689012345', 'Calle MarrÛn 80, Granada', 31000, 'AtlÈtico de Madrid'),
+('00000000I', 'Hugo MartÌnez', '1993-09-10', '612345678', 'Calle Celeste 90, Toledo', 32000, 'Sevilla FC'),
+('11111111J', 'Cristina Fern·ndez', '1992-10-22', '623456789', 'Calle Verde 100, Murcia', 33000, 'Valencia CF'),
 ('22222222K', 'Antonio Castillo', '1985-11-17', '634567890', 'Calle Real 110, Oviedo', 34000, 'FC Barcelona'),
-('33333333L', 'Laura Ruiz', '1988-12-06', '645678901', 'Calle Mistral 120, Almer√≠a', 35000, 'Real Madrid'),
-('44444444M', 'Ricardo Pe√±a', '1990-03-22', '656789012', 'Calle Sur 130, Salamanca', 36000, 'Atl√©tico de Madrid'),
+('33333333L', 'Laura Ruiz', '1988-12-06', '645678901', 'Calle Mistral 120, AlmerÌa', 35000, 'Real Madrid'),
+('44444444M', 'Ricardo PeÒa', '1990-03-22', '656789012', 'Calle Sur 130, Salamanca', 36000, 'AtlÈtico de Madrid'),
 ('55555555N', 'Isabel Herrera', '1994-04-18', '667890123', 'Calle Este 140, Santiago', 37000, 'Sevilla FC'),
-('66666666O', 'Eduardo Ortega', '1995-05-25', '678901234', 'Calle Oeste 150, C√°ceres', 38000, 'Valencia CF'),
-('77777777P', 'Patricia N√∫√±ez', '1989-06-14', '689012345', 'Calle Norte 160, Ja√©n', 34000, 'FC Barcelona'),
+('66666666O', 'Eduardo Ortega', '1995-05-25', '678901234', 'Calle Oeste 150, C·ceres', 38000, 'Valencia CF'),
+('77777777P', 'Patricia N˙Òez', '1989-06-14', '689012345', 'Calle Norte 160, JaÈn', 34000, 'FC Barcelona'),
 ('88888888Q', 'Sergio Ruiz', '1987-07-19', '601234567', 'Calle Sur 170, Huelva', 31000, 'Real Madrid'),
-('99999999R', 'Clara Romero', '1986-02-09', '612345678', 'Calle del Sol 180, Le√≥n', 32000, 'Atl√©tico de Madrid'),
-('00000000S', 'Luis Delgado', '1992-12-30', '623456789', 'Calle del Mar 190, C√≥rdoba', 33000, 'Sevilla FC'),
-('12121212T', '√Ålvaro Ortega', '1994-01-15', '634567890', 'Calle del Viento 200, Palencia', 35000, 'Valencia CF'),
+('99999999R', 'Clara Romero', '1986-02-09', '612345678', 'Calle del Sol 180, LeÛn', 32000, 'AtlÈtico de Madrid'),
+('00000000S', 'Luis Delgado', '1992-12-30', '623456789', 'Calle del Mar 190, CÛrdoba', 33000, 'Sevilla FC'),
+('12121212T', '¡lvaro Ortega', '1994-01-15', '634567890', 'Calle del Viento 200, Palencia', 35000, 'Valencia CF'),
 ('13131313U', 'Natalia Castro', '1985-04-10', '645678901', 'Calle de la Paz 210, Ronda', 36000, 'FC Barcelona'),
 ('14141414V', 'Javier Salas', '1991-08-24', '656789012', 'Calle del Amor 220, Badajoz', 37000, 'Real Madrid'),
-('15151515W', 'Ver√≥nica L√≥pez', '1988-05-02', '667890123', 'Calle de la Esperanza 230, Lugo', 38000, 'Atl√©tico de Madrid'),
-('16161616X', 'Samuel Mart√≠nez', '1990-11-18', '678901234', 'Calle del Saber 240, Soria', 34000, 'Sevilla FC'),
+('15151515W', 'VerÛnica LÛpez', '1988-05-02', '667890123', 'Calle de la Esperanza 230, Lugo', 38000, 'AtlÈtico de Madrid'),
+('16161616X', 'Samuel MartÌnez', '1990-11-18', '678901234', 'Calle del Saber 240, Soria', 34000, 'Sevilla FC'),
 ('17171717Y', 'Alba Ruiz', '1993-03-12', '689012345', 'Calle del Camino 250, Cuenca', 31000, 'Valencia CF');
 
 INSERT INTO PERSONAL (DNI, Nombre, F_nacimiento, Telefono, Direccion, Sueldo, EQUIPO_Nombre_equipo) VALUES
 ('12345679A', 'Jorge Silva', '1985-03-01', '612345670', 'Calle Luna 1, Madrid', 31000, 'FC Barcelona'),
 ('23456780B', 'Elena Ruiz', '1990-01-15', '623456780', 'Avenida del Sol 2, Sevilla', 32000, 'Real Madrid'),
-('34567891C', 'Pablo Garc√≠a', '1988-02-28', '634567891', 'Paseo del Arte 3, Valencia', 33000, 'Atl√©tico de Madrid'),
-('45678902D', 'Ana L√≥pez', '1991-04-20', '645678902', 'Calle del Viento 4, Barcelona', 34000, 'Sevilla FC'),
-('56789013E', 'Javier P√©rez', '1986-05-30', '656789013', 'Calle del Mar 5, Bilbao', 35000, 'Valencia CF'),
-('67890124F', 'Sandra D√≠az', '1984-06-10', '667890124', 'Plaza del Parque 6, Zaragoza', 36000, 'FC Barcelona'),
-('78901235G', 'Miguel √Ångel Ruiz', '1995-07-15', '678901235', 'Calle de la Paz 7, M√°laga', 37000, 'Real Madrid'),
-('89012346H', 'Patricia S√°nchez', '1991-08-22', '689012346', 'Avenida de la Libertad 8, Granada', 38000, 'Atl√©tico de Madrid'),
-('90123457I', 'Rafael Mart√≠nez', '1989-09-18', '612345678', 'Calle del Sol 9, Toledo', 39000, 'Sevilla FC'),
-('01234568J', 'Laura Hern√°ndez', '1993-10-25', '623456789', 'Calle del R√≠o 10, Murcia', 40000, 'Valencia CF'),
-('22222223K', 'Ra√∫l Moreno', '1985-11-02', '634567890', 'Calle Nueva 11, Oviedo', 41000, 'FC Barcelona'),
-('33333334L', 'Carmen Romero', '1988-12-16', '645678901', 'Calle del Norte 12, Almer√≠a', 42000, 'Real Madrid'),
-('44444445M', 'Luis Alberto Castro', '1990-01-22', '656789012', 'Calle del Este 13, Salamanca', 43000, 'Atl√©tico de Madrid'),
-('55555556N', 'Mar√≠a Teresa Herrera', '1994-02-14', '667890123', 'Calle del Sur 14, Santiago', 44000, 'Sevilla FC'),
-('66666667O', 'Antonio Navarro', '1995-03-25', '678901234', 'Calle del Oeste 15, C√°ceres', 45000, 'Valencia CF'),
-('77777778P', 'David Salas', '1989-04-30', '689012345', 'Calle del Centro 16, Ja√©n', 46000, 'FC Barcelona'),
+('34567891C', 'Pablo GarcÌa', '1988-02-28', '634567891', 'Paseo del Arte 3, Valencia', 33000, 'AtlÈtico de Madrid'),
+('45678902D', 'Ana LÛpez', '1991-04-20', '645678902', 'Calle del Viento 4, Barcelona', 34000, 'Sevilla FC'),
+('56789013E', 'Javier PÈrez', '1986-05-30', '656789013', 'Calle del Mar 5, Bilbao', 35000, 'Valencia CF'),
+('67890124F', 'Sandra DÌaz', '1984-06-10', '667890124', 'Plaza del Parque 6, Zaragoza', 36000, 'FC Barcelona'),
+('78901235G', 'Miguel ¡ngel Ruiz', '1995-07-15', '678901235', 'Calle de la Paz 7, M·laga', 37000, 'Real Madrid'),
+('89012346H', 'Patricia S·nchez', '1991-08-22', '689012346', 'Avenida de la Libertad 8, Granada', 38000, 'AtlÈtico de Madrid'),
+('90123457I', 'Rafael MartÌnez', '1989-09-18', '612345678', 'Calle del Sol 9, Toledo', 39000, 'Sevilla FC'),
+('01234568J', 'Laura Hern·ndez', '1993-10-25', '623456789', 'Calle del RÌo 10, Murcia', 40000, 'Valencia CF'),
+('22222223K', 'Ra˙l Moreno', '1985-11-02', '634567890', 'Calle Nueva 11, Oviedo', 41000, 'FC Barcelona'),
+('33333334L', 'Carmen Romero', '1988-12-16', '645678901', 'Calle del Norte 12, AlmerÌa', 42000, 'Real Madrid'),
+('44444445M', 'Luis Alberto Castro', '1990-01-22', '656789012', 'Calle del Este 13, Salamanca', 43000, 'AtlÈtico de Madrid'),
+('55555556N', 'MarÌa Teresa Herrera', '1994-02-14', '667890123', 'Calle del Sur 14, Santiago', 44000, 'Sevilla FC'),
+('66666667O', 'Antonio Navarro', '1995-03-25', '678901234', 'Calle del Oeste 15, C·ceres', 45000, 'Valencia CF'),
+('77777778P', 'David Salas', '1989-04-30', '689012345', 'Calle del Centro 16, JaÈn', 46000, 'FC Barcelona'),
 ('88888889Q', 'Isabel Ortega', '1987-05-21', '601234567', 'Calle del Mar 17, Huelva', 47000, 'Real Madrid'),
-('99999990R', 'Sergio Mart√≠nez', '1986-06-05', '612345678', 'Calle de la Esperanza 18, Le√≥n', 48000, 'Atl√©tico de Madrid'),
-('00000001S', 'Marta Gonz√°lez', '1992-07-10', '623456789', 'Calle de la Libertad 19, C√≥rdoba', 49000, 'Sevilla FC'),
-('12121213T', 'Carlos Fern√°ndez', '1994-08-16', '634567890', 'Calle de la Paz 20, Palencia', 50000, 'Valencia CF'),
+('99999990R', 'Sergio MartÌnez', '1986-06-05', '612345678', 'Calle de la Esperanza 18, LeÛn', 48000, 'AtlÈtico de Madrid'),
+('00000001S', 'Marta Gonz·lez', '1992-07-10', '623456789', 'Calle de la Libertad 19, CÛrdoba', 49000, 'Sevilla FC'),
+('12121213T', 'Carlos Fern·ndez', '1994-08-16', '634567890', 'Calle de la Paz 20, Palencia', 50000, 'Valencia CF'),
 ('13131314U', 'Natalia Ruiz', '1985-09-01', '645678901', 'Calle de la Historia 21, Ronda', 31000, 'FC Barcelona'),
 ('14141415V', 'Cristina Salazar', '1991-10-19', '656789012', 'Calle de los Jardines 22, Badajoz', 32000, 'Real Madrid'),
-('15151516W', 'Hugo Castro', '1988-11-23', '667890123', 'Calle del Acero 23, Lugo', 33000, 'Atl√©tico de Madrid'),
-('16161617X', '√Ålvaro L√≥pez', '1990-12-08', '678901234', 'Calle del Templo 24, Soria', 34000, 'Sevilla FC'),
-('17171718Y', 'Bel√©n Ruiz', '1993-01-15', '689012345', 'Calle del Mar 25, Cuenca', 35000, 'Valencia CF');
+('15151516W', 'Hugo Castro', '1988-11-23', '667890123', 'Calle del Acero 23, Lugo', 33000, 'AtlÈtico de Madrid'),
+('16161617X', '¡lvaro LÛpez', '1990-12-08', '678901234', 'Calle del Templo 24, Soria', 34000, 'Sevilla FC'),
+('17171718Y', 'BelÈn Ruiz', '1993-01-15', '689012345', 'Calle del Mar 25, Cuenca', 35000, 'Valencia CF');
 
 
 
@@ -133,7 +132,7 @@ VALUES
 ('12345678A', 'El Mago', 'Delantero', 3, 5000000, 2, '78901234G'),
 ('23456789B', 'El Gato', 'Portero', 5, 3000000, 4, '78901234G'),
 ('34567890C', 'El Tanque', 'Defensa', 4, 2500000, 3, '78901234G'),
-('45678901D', 'El R√°pido', 'Extremo', 2, 2000000, 1, '78901234G'),
+('45678901D', 'El R·pido', 'Extremo', 2, 2000000, 1, '78901234G'),
 ('56789012E', 'El Cerebro', 'Centrocampista', 6, 6000000, 5, '78901234G');
 
 INSERT INTO JUGADOR (Dni, Alias, Puesto, Anos_contrato, Clausula_rescision, Anos_en_equipo, Personal_Dni) 
@@ -141,12 +140,12 @@ VALUES
 ('88888888G', 'El Talento', 'Delantero', 3, 4500000, 1, '77777777F'),
 ('99999999H', 'La Muralla', 'Defensa', 4, 3000000, 2, '77777777F'),
 ('00000000I', 'El Veloz', 'Extremo', 5, 2500000, 3, '77777777F'),
-('11111111J', 'El Capit√°n', 'Centrocampista', 2, 2000000, 1, '77777777F'),
-('22222222K', 'El M√°gico', 'Portero', 6, 5000000, 4, '77777777F');
+('11111111J', 'El Capit·n', 'Centrocampista', 2, 2000000, 1, '77777777F'),
+('22222222K', 'El M·gico', 'Portero', 6, 5000000, 4, '77777777F');
 
 INSERT INTO JUGADOR (Dni, Alias, Puesto, Anos_contrato, Clausula_rescision, Anos_en_equipo, Personal_Dni) 
 VALUES 
-('33333333B', 'El Halc√≥n', 'Delantero', 4, 7000000, 2, '17171718Y'),
+('33333333B', 'El HalcÛn', 'Delantero', 4, 7000000, 2, '17171718Y'),
 ('44444444C', 'El Guerrero', 'Defensa', 3, 5500000, 1, '17171718Y'),
 ('55555555D', 'El Maestro', 'Centrocampista', 5, 6000000, 3, '17171718Y'),
 ('66666666E', 'El Brillante', 'Extremo', 2, 4500000, 1, '17171718Y'),
@@ -155,9 +154,9 @@ VALUES
 
 INSERT INTO EQUIPO (Nombre_equipo, N_socios, Campo, Ciudad, Ano_fundacion, Anos_en_primera, Nombre_fundador, PERSONAL_Dni, PERSONAL_Dni1, PERSONAL_Dni5, PERSONAL_Dni2, PERSONAL_Dni3, PERSONAL_Dni6) VALUES
 ('FC Barcelona', 90000, 'Camp Nou', 'Barcelona', 1899, 122, 'Joan Gamper', '12345678A', '22222222A', '33333333B', '44444444C', '55555555D', '66666666E'),
-('Real Madrid', 100000, 'Santiago Bernab√©u', 'Madrid', 1902, 118, 'Santiago Bernab√©u', '23456789B', '77777777F', '88888888G', '99999999H', '00000000I', '11111111J'),
-('Atl√©tico de Madrid', 30000, 'C√≠vitas Metropoli', 'Madrid', 1903, 119, 'L√°zaro P√©rez', '34567890C', '22222222K', '33333333L', '44444444M', '55555555N', '66666666O'),
-('Sevilla FC', 40000, 'Ram√≥n S√°nchez-Piz', 'Sevilla', 1890, 134, 'Jos√© Luis Romero', '45678901D', '77777777P', '88888888Q', '99999999R', '00000000S', '12121212T'),
+('Real Madrid', 100000, 'Santiago BernabÈu', 'Madrid', 1902, 118, 'Santiago BernabÈu', '23456789B', '77777777F', '88888888G', '99999999H', '00000000I', '11111111J'),
+('AtlÈtico de Madrid', 30000, 'CÌvitas Metropoli', 'Madrid', 1903, 119, 'L·zaro PÈrez', '34567890C', '22222222K', '33333333L', '44444444M', '55555555N', '66666666O'),
+('Sevilla FC', 40000, 'RamÛn S·nchez-Piz', 'Sevilla', 1890, 134, 'JosÈ Luis Romero', '45678901D', '77777777P', '88888888Q', '99999999R', '00000000S', '12121212T'),
 ('Valencia CF', 50000, 'Mestalla', 'Valencia', 1919, 103, 'Juan Soler', '56789012E', '22222223K', '33333334L', '44444445M', '55555556N', '66666667O');
 
 
@@ -210,7 +209,7 @@ INSERT INTO PARTIDO (
 ) 
 VALUES 
 (1, '2024-10-05', '2-1', 150000, 50000, 1, 2024, '17:00', 'Real Madrid', 'FC Barcelona', 11, 1, 1, 0),
-(2, '2024-10-06', '3-2', 120000, 45000, 1, 2024, '19:00', 'Atl√©tico de Madrid', 'Valencia CF', 12, 2, 1, 0),
-(3, '2024-10-07', '1-1', 80000, 30000, 2, 2024, '16:30', 'Atl√©tico de Madrid', 'FC Barcelona', 13, 3, 1, 0),
-(4, '2024-10-08', '0-0', 50000, 20000, 2, 2024, '18:00', 'Real Madrid', 'Atl√©tico de Madrid', 14, 4, 1, 0),
+(2, '2024-10-06', '3-2', 120000, 45000, 1, 2024, '19:00', 'AtlÈtico de Madrid', 'Valencia CF', 12, 2, 1, 0),
+(3, '2024-10-07', '1-1', 80000, 30000, 2, 2024, '16:30', 'AtlÈtico de Madrid', 'FC Barcelona', 13, 3, 1, 0),
+(4, '2024-10-08', '0-0', 50000, 20000, 2, 2024, '18:00', 'Real Madrid', 'AtlÈtico de Madrid', 14, 4, 1, 0),
 (5, '2024-10-09', '2-3', 110000, 60000, 3, 2024, '20:00', 'Valencia CF', 'FC Barcelona', 15, 5, 0, 1);
